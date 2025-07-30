@@ -1,0 +1,25 @@
+# 服务器指南配置
+# 配置文件版本，请勿手动修改
+version: 1
+
+guide:
+  # 是否发送欢迎消息
+  enable-join-message: true
+  # 是否对新玩家发送完整指令指南
+  enable-new-player-guide: true
+  # 是否对老玩家发送完整指令指南
+  enable-old-player-guide: false
+  server-name: "天启·星火"
+  join-message: "&a欢迎 {player} 来到天启·星火服务器！当前在线{online}/{maxplayers}人，使用/hg查看完整指令指南"
+  content: |
+    &6==== {server} 服务器指令指南 ====
+    &b/bs - 返回出生点
+    &b/bsback - 返回之前位置
+    &b/tpa - 回家
+    &b/tpa [玩家] - 请求传送到其他玩家
+    &b/tpaccept - 接受传送请求
+    &b/tpdeny - 拒绝传送请求
+    &b/tpahere [玩家] - 请求其他玩家传送到这里
+    &b/sit - 坐下
+    &b/hg - 显示本指南
+    &6=======================

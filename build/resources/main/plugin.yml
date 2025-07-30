@@ -1,0 +1,11 @@
+name: HelpGuide
+version: '1.0'
+main: hg.helpGuide.HelpGuide
+api-version: '1.21'
+authors: [ TNTXZ ]
+description: 一个用于显示服务器指令的插件
+commands:
+  hg:
+    description: 显示服务器指令指南
+    usage: /<command>
+    aliases: [helpguide]
