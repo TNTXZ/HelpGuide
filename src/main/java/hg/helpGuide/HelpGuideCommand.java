@@ -15,10 +15,10 @@ public class HelpGuideCommand implements CommandExecutor {
             sender.sendMessage("只有玩家可以使用此命令!");
             return true;
         }
-        if (!sender.hasPermission("helpGuide.use")) {
-            sender.sendMessage("你没有权限使用此命令!");
-            return true;
-        }
+        //if (!sender.hasPermission("helpGuide.use")) {
+        //    sender.sendMessage("你没有权限使用此命令!");
+        //    return true;
+        //}
         String guideContent = HelpGuide.getPlugin().getConfig().getString("guide.content");
         if (guideContent != null) {
             String processedContent = MessageUtils.processMessage(guideContent, (Player)sender);
